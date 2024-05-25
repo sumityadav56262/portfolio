@@ -276,7 +276,7 @@ nav .fas{
      background-size: auto 400px;
      background-position-y: 110px;
      background-position: bottom;
-     background-position-x: -25vh;
+     background-position-x: center;
      margin-bottom: 0;
     }
     .nav .fas{
