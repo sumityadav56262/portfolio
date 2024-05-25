@@ -273,10 +273,10 @@ nav .fas{
      font-size: 8.2vw;
     }
     #header{
-     background-size: auto 70vh;
-     background-position-y: 110px;
+     background-size: auto 75vh;
+     background-position-y: 0vh;
      background-position: bottom;
-     background-position-x: center;
+     background-position-x: -60vw;
      margin-bottom: 0;
     }
     .nav .fas{
