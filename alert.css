@@ -1,0 +1,25 @@
+.alert {
+    width: fit-content;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: var(--purpleClr);
+    color: white;
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }

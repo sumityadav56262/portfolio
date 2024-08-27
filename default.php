@@ -1,0 +1,174 @@
+<?php
+    if(isset($_GET['msg']))
+    {
+        echo '
+            <div class="alert">
+                <span class="closebtn" onclick="this.parentElement.style.display=\'none\';">&times;</span> 
+                <strong>'.$_GET['msg'].'</strong>
+            </div>';
+
+    }
+?>
+<html>
+<head>
+    <title>Sumit Kuamr Yadav</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="alert.css">
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b9c282043e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav class="nav">
+            <div class="logo">
+                <img src="" alt="">
+                <h1><p>S</p>umit</h1>
+            </div>
+            <div class="menues">
+                <ul id="ulMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Project</a></li>
+                    <LI><a href="#contact">Contact</a></LI>
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+            </div>
+        </nav>
+        <div class="header-text">
+            <p>Software Devloper</p>
+            <h1>Hi, I'm <span>Sumit</span><br> Yadav From Nepal</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Pics/about_me_pic.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am confident and motivated person with good interpersonal skill and ability to interact with people at all levels, a professional and excellent team player providing quality customer care to create a positive customer experience wants to be part of growth and
+                    result-oriented organization.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="openTab('skills')">Skils</p>
+                    <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                    <p class="tab-links" onclick="openTab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Language</span><br>Proficient in C++, Java, SQL, PHP, HTML, CSS, JavaScript, VB.net, and Android development</li>
+                        <li><span>Data Structure and algorithms</span><br>Strong understanding of data structures and algorithms</il>
+                        <li><span>Software development</span><br>Experience with software development methodologies and best practices</li>
+                        <li><span>Web Devlopment</span><br>Ability to design, develop, and maintain Web apps</li>
+                        <li><span>problem-solving</span><br>Excellent problem-solving and troubleshooting skills</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Company Name:</span><br>Monarch Soft. tech. LLB</li>
+                        <li><span>Date:</span><br>2022 Jun 9 to 2023 Feb 9</il>
+                        <li><span>Responsibility:</span><br>
+                            Responsible for fixing bugs, run time exception and implementing new features according to demand.  
+                        </li>
+                    </ul>
+                    <br>
+                    <ul>
+                        <li><span>Company Name:</span><br>Blue Waves Pvt. Ltd.</li>
+                        <li><span>Date:</span><br>2023 Feb 15 and Ongoing</il>
+                        <li><span>Responsibility:</span><br>
+                            Manage all aspects of a web application, including functionality, design,
+                                        optimization, and adaptability across devices. 
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Collage Name:</span><br>Chandranagar Polytechnic Institude</li>
+                        <li><span>Qulification</span><br>Diploma In Information Technology(3 Years)</il>
+                        <li><span>Date: </span><br>2021 - 2024</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+<!-- -------------------------------projects--------------------------------- -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="project-list">
+            <div class="project">
+                <h1>E-commerce Website</h1>
+                <p> Designed and developed a fully functional e-commerce website from scratch, allowing users to browse products, add them to cart, and make purchases securely.
+                    Implemented features such as user authentication, product search, and order tracking.
+                    Utilized PHP for server-side scripting, JavaScript for client-side interactivity, and SQL for database management.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="project">
+                <h1>Hostel Managment System</h1>
+                <p> Developed a comprehensive hostel management system to automate various administrative tasks, including room allocation, fee management, and student records.
+                    Implemented user-friendly interfaces for administrators, staff, and students.
+                    Integrated database functionality for efficient data management.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="project">
+                <h1>ATM simmulation</h1>
+                <p> Developed a basic ATM system to simulate the functionality of an ATM.
+                    Implemented features such as cash withdrawal, balance inquiry, and PIN verification.
+                    Demonstrated proficiency in programming logic and algorithm implementation.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="contact">
+    <div class="container contact">
+        <div class="row">
+            <div class="contact-left">
+                <h1>Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>Sumityadav56262@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+977 9866113841</p>
+                <div class="social-icon">
+                    <a href="https://www.linkedin.com/in/sumit-yadav-196a15300/"><i class="fa-brands fa-linkedin"></i></i></a>
+                    <a href="https://www.youtube.com/channel/UCde6wZnA8b8_U6hMe7tFjlA"><i class="fa-brands fa-youtube" ></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100094666355527"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/SumitYadav2024"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <a class="btn" href="Pics/Sumit_Kumar_Yadav.pdf" download="Sumit_Kumar_Yadav_CV.pdf">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="send.php" method="post">
+                    <input type="text" name="Username" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message" id=""></textarea>
+                    <button class="btn2" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>Copyright @ Sumit, Made by Sumit Kumar Yadav</p>
+</div>
+<script>
+var slideMenu = document.getElementById("ulMenu");
+
+function showMenu(){
+    slideMenu.style.right = "0px";
+}
+function hideMenu(){
+    slideMenu.style.right = "-150px";
+}
+</script>
+</body> 
+</html>

@@ -1,8 +1,6 @@
 var m_tabLinks = document.getElementsByClassName('tab-links');
 var m_tabContents = document.getElementsByClassName('tab-contents');
 
-var m_projectTabLinks = document.getElementsByClassName('project-tab-links');
-var m_projectTabContents = document.getElementsByClassName('project-tab-contents');
 var slideMenu = document.getElementById("ulMenu");
 
 function showMenu(){
@@ -22,14 +20,14 @@ function openTab(_tabName){
     event.currentTarget.classList.add("active-link")
     document.getElementById(_tabName).classList.add('active-tab')
 }
-function openProjectTab(_tabName)
-{
-    for(tabLink of m_projectTabLinks){
-        tabLink.classList.remove("active-link");
+document.addEventListener('DOMContentLoaded', function() {
+    const currentUrl = window.location.href;
+    const url = new URL(currentUrl);
+    const msgParam = url.searchParams.get('msg');
+
+    if (msgParam) {
+        setTimeout(function() {
+            window.location.href = url.origin + url.pathname;
+        }, 3000); // 3000ms = 3 seconds
     }
-    for(tabContent of m_projectTabContents){
-        tabContent.classList.remove("active-tab");
-    }
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(_tabName).classList.add("active-tab");
-}
+});

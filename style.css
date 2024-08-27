@@ -154,8 +154,8 @@ body::-webkit-scrollbar {
 .tab-contents.active-tab{
     display: block;
 }
-.sub-title{
-}
+/* -------------------project------------------- */
+
 .container{
     margin: 40px;
 }
