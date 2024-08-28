@@ -31,9 +31,9 @@ if (isset($_POST['email'])) {
 
         $mail->send();
         
-        header("Location: default.php?msg=Send Successfuly!");
+        header("Location: index.html?msg=Send Successfuly!");
         
     } catch (Exception $e) {
-        header("Location: default.php?msg=Something went wrong!");
+        header("Location: index.html?msg=Something went wrong!");
     }
 }

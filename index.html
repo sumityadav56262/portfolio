@@ -1,14 +1,3 @@
-<?php
-    if(isset($_GET['msg']))
-    {
-        echo '
-            <div class="alert">
-                <span class="closebtn" onclick="this.parentElement.style.display=\'none\';">&times;</span> 
-                <strong>'.$_GET['msg'].'</strong>
-            </div>';
-
-    }
-?>
 <html>
 <head>
     <title>Sumit Kuamr Yadav</title>
@@ -21,6 +10,10 @@
 
 </head>
 <body>
+<div class="alert">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+    <strong id="msgBox"></strong>
+</div>
 <div id="header">
     <div class="container">
         <nav class="nav">
@@ -158,7 +151,7 @@
     </div>
 </div>
 <div class="copyright">
-    <p>Copyright @ Sumit, Made by Sumit Kumar Yadav</p>
+    <p>Copyright &copy; Sumit, Made by Sumit Kumar Yadav</p>
 </div>
 <script>
 var slideMenu = document.getElementById("ulMenu");

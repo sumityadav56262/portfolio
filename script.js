@@ -26,6 +26,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const msgParam = url.searchParams.get('msg');
 
     if (msgParam) {
+        document.getElementById('msgBox').textContent = msgParam;
+        document.querySelector(".alert").style.display = "block";
         setTimeout(function() {
             window.location.href = url.origin + url.pathname;
         }, 3000); // 3000ms = 3 seconds
